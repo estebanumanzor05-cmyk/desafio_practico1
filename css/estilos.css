@@ -429,3 +429,127 @@ footer a {
     color: var(--azul);
     font-size: 40px;
 }
+
+.nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.nosotros img {
+    border-radius: 10px;
+    border: 5px solid var(--amarillo);
+}
+
+.frase {
+    font-size: 22px;
+    padding-left: 20px;
+    border-left: 6px solid var(--azul);
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: var(--blanco);
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 6px solid var(--azul);
+}
+
+.tarjeta h3 {
+    color: var(--azul);
+}
+
+.tarjeta a {
+    color: var(--azul);
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    .fila-famosos {
+        flex-wrap: wrap;
+    }
+
+    .famoso {
+        flex: 1 1 200px;
+    }
+
+    .tours {
+        grid-template-columns: 1fr;
+    }
+
+    .tarjetas {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        padding-top: 100px;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    .header-contenido {
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .portada,
+    .nosotros {
+        grid-template-columns: 1fr;
+    }
+
+    .portada {
+        min-height: auto;
+    }
+
+    .foto-portada {
+        height: 230px;
+    }
+
+    .portada h1 {
+        font-size: 30px;
+    }
+
+    .buscador {
+        grid-column: 1;
+    }
+
+    .lista-departamentos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .tour {
+        flex-direction: column;
+    }
+
+    .tour img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .departamento {
+        scroll-margin-top: 110px;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+    }
+}
