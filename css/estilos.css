@@ -290,3 +290,142 @@ footer a {
     border-top: 1px solid #444444;
     font-size: 14px;
 }
+
+.banner {
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
+    padding: 50px 0;
+}
+
+.banner h1 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.menu-departamentos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    padding: 25px 0;
+    margin: 0;
+}
+
+.menu-departamentos a {
+    display: block;
+    padding: 8px 16px;
+    border: 2px solid var(--azul);
+    border-radius: 20px;
+    color: var(--azul);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu-departamentos a:hover {
+    background-color: var(--azul);
+    color: var(--blanco);
+}
+
+.departamento {
+    padding: 30px 0;
+    scroll-margin-top: 80px;
+}
+
+.departamento h2 {
+    display: inline-block;
+    padding: 5px 15px;
+    border-left: 8px solid var(--amarillo);
+    color: var(--azul);
+}
+
+.departamento:target h2 {
+    background-color: var(--amarillo);
+    color: var(--negro);
+}
+
+.tours {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.tour {
+    display: flex;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tour img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.tour-info {
+    padding: 15px 20px;
+}
+
+.tour-info h3 {
+    color: var(--azul);
+    margin-bottom: 10px;
+}
+
+.tour-info p {
+    margin: 6px 0;
+}
+
+.tour-info .boton {
+    margin-top: 10px;
+}
+
+.formulario {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 3px solid var(--azul);
+    border-radius: 10px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    margin-bottom: 18px;
+    padding: 12px;
+    border: 2px solid #cccccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: var(--azul);
+}
+
+.formulario textarea {
+    height: 120px;
+}
+
+.gracias {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.gracias h1 {
+    color: var(--azul);
+    font-size: 40px;
+}
