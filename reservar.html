@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivar Tours | Reservar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&amp;family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor header-contenido">
+            <a href="index.html" class="logo">Sivar <span>Tours</span></a>
+            <nav aria-label="Menú principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="viajes.html">Viajes</a></li>
+                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="contenedor">
+                <h1>Reservar tour</h1>
+                <p>Llena tus datos y te confirmamos tu cupo por correo.</p>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <div class="contenedor">
+                <form class="formulario" action="gracias.html" method="get">
+                    <label for="tour">Tour</label>
+                    <select id="tour" name="tour" required>
+                        <option value="">-- Elige un tour --</option>
+                        <option>Ruta de las Flores: Concepción de Ataco (Ahuachapán)</option>
+                        <option>Parque Nacional El Imposible (Ahuachapán)</option>
+                        <option>Lago de Coatepeque (Santa Ana)</option>
+                        <option>Volcán de Santa Ana (Santa Ana)</option>
+                        <option>Juayúa y su Feria Gastronómica (Sonsonate)</option>
+                        <option>Playa Los Cóbanos (Sonsonate)</option>
+                        <option>Cerro El Pital (Chalatenango)</option>
+                        <option>Río Sumpul (Chalatenango)</option>
+                        <option>Playa El Tunco (La Libertad)</option>
+                        <option>Joya de Cerén (La Libertad)</option>
+                        <option>Centro Histórico de San Salvador (San Salvador)</option>
+                        <option>Puerta del Diablo (San Salvador)</option>
+                        <option>Suchitoto colonial (Cuscatlán)</option>
+                        <option>Cascada Los Tercios (Cuscatlán)</option>
+                        <option>Ilobasco, tierra de la cerámica (Cabañas)</option>
+                        <option>Bosque de Cinquera (Cabañas)</option>
+                        <option>Costa del Sol (La Paz)</option>
+                        <option>Estero de Jaltepeque (La Paz)</option>
+                        <option>Volcán Chichontepec (San Vicente)</option>
+                        <option>Laguna de Apastepeque (San Vicente)</option>
+                        <option>Bahía de Jiquilisco (Usulután)</option>
+                        <option>Laguna de Alegría (Usulután)</option>
+                        <option>Playa El Cuco (San Miguel)</option>
+                        <option>Volcán Chaparrastique (San Miguel)</option>
+                        <option>Perquín (Morazán)</option>
+                        <option>Río Sapo (Morazán)</option>
+                        <option>Isla Meanguera del Golfo (La Unión)</option>
+                        <option>Playa El Tamarindo (La Unión)</option>
+                    </select>
+
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" minlength="3" required>
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="7777-7777" pattern="[0-9]{4}-?[0-9]{4}" required>
+
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@gmail.com" required>
+
+                    <button type="submit" class="boton boton-azul">Reservar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <div class="footer-contenido">
+                <div>
+                    <h3>Sivar Tours</h3>
+                    <p>Lo mejor de los 14 departamentos de El Salvador.</p>
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>sivartours@gmail.com</p>
+                    <p>2555-5555</p>
+                </div>
+                <div>
+                    <h3>Ubicación</h3>
+                    <p>Calle 4, bulevar Luis Poma,<br>centro comercial Las Flores, local 6</p>
+                </div>
+            </div>
+            <p class="copy">© 2026 Sivar Tours. Fotos: Wikimedia Commons.</p>
+        </div>
+    </footer>
+</body>
+</html>
