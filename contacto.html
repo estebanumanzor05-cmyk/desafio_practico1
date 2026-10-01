@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sivar Tours | Contacto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&amp;family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedor header-contenido">
+            <a href="index.html" class="logo">Sivar <span>Tours</span></a>
+            <nav aria-label="Menú principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="viajes.html">Viajes</a></li>
+                    <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                    <li><a href="contacto.html" class="activo">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <div class="contenedor">
+                <h1>Contacto</h1>
+                <p>Escríbenos o visítanos, con gusto te ayudamos a planear tu viaje.</p>
+            </div>
+        </section>
+
+        <section class="seccion seccion-gris">
+            <div class="contenedor tarjetas">
+                <article class="tarjeta">
+                    <h3>Correo</h3>
+                    <p><a href="mailto:sivartours@gmail.com">sivartours@gmail.com</a></p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Teléfono</h3>
+                    <p><a href="tel:25555555">2555-5555</a></p>
+                </article>
+                <article class="tarjeta">
+                    <h3>Ubicación</h3>
+                    <p>Calle 4, bulevar Luis Poma, centro comercial Las Flores, local 6</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Envíanos un mensaje</h2>
+                <form class="formulario" action="gracias.html" method="get">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="correo">Correo electrónico</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" minlength="10" required></textarea>
+
+                    <button type="submit" class="boton boton-azul">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <div class="footer-contenido">
+                <div>
+                    <h3>Sivar Tours</h3>
+                    <p>Lo mejor de los 14 departamentos de El Salvador.</p>
+                </div>
+                <div>
+                    <h3>Contacto</h3>
+                    <p>sivartours@gmail.com</p>
+                    <p>2555-5555</p>
+                </div>
+                <div>
+                    <h3>Ubicación</h3>
+                    <p>Calle 4, bulevar Luis Poma,<br>centro comercial Las Flores, local 6</p>
+                </div>
+            </div>
+            <p class="copy">© 2026 Sivar Tours. Fotos: Wikimedia Commons.</p>
+        </div>
+    </footer>
+</body>
+</html>
