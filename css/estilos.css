@@ -259,38 +259,6 @@ nav a.activo {
     font-size: 14px;
 }
 
-footer {
-    background-color: var(--negro);
-    color: var(--blanco);
-    padding: 40px 0 20px;
-}
-
-.footer-contenido {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-}
-
-footer h3 {
-    color: var(--amarillo);
-}
-
-footer p {
-    margin: 6px 0;
-}
-
-footer a {
-    color: var(--blanco);
-}
-
-.copy {
-    text-align: center;
-    margin-top: 30px;
-    padding-top: 20px;
-    border-top: 1px solid #444444;
-    font-size: 14px;
-}
-
 .banner {
     background-color: var(--azul-oscuro);
     color: var(--blanco);
@@ -383,6 +351,46 @@ footer a {
     margin-top: 10px;
 }
 
+.nosotros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.nosotros img {
+    border-radius: 10px;
+    border: 5px solid var(--amarillo);
+}
+
+.frase {
+    font-size: 22px;
+    padding-left: 20px;
+    border-left: 6px solid var(--azul);
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: var(--blanco);
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 6px solid var(--azul);
+}
+
+.tarjeta h3 {
+    color: var(--azul);
+}
+
+.tarjeta a {
+    color: var(--azul);
+    font-weight: 700;
+}
+
 .formulario {
     max-width: 650px;
     margin: 0 auto;
@@ -430,44 +438,36 @@ footer a {
     font-size: 40px;
 }
 
-.nosotros {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
+footer {
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 40px 0 20px;
 }
 
-.nosotros img {
-    border-radius: 10px;
-    border: 5px solid var(--amarillo);
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
 }
 
-.frase {
-    font-size: 22px;
-    padding-left: 20px;
-    border-left: 6px solid var(--azul);
+footer h3 {
+    color: var(--amarillo);
 }
 
-.tarjetas {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+footer p {
+    margin: 6px 0;
 }
 
-.tarjeta {
-    background-color: var(--blanco);
-    padding: 25px;
-    border-radius: 10px;
-    border-top: 6px solid var(--azul);
+footer a {
+    color: var(--blanco);
 }
 
-.tarjeta h3 {
-    color: var(--azul);
-}
-
-.tarjeta a {
-    color: var(--azul);
-    font-weight: 700;
+.copy {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444444;
+    font-size: 14px;
 }
 
 @media (max-width: 900px) {
